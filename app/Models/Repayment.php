@@ -12,4 +12,8 @@ class Repayment extends Model
     protected $casts = ['paid_at'=>'datetime','confirmed_at'=>'datetime'];
     public function loan(): BelongsTo
     { return $this->belongsTo(Loan::class); }
+    public function user(): BelongsTo
+    { return $this->belongsTo(User::class); }
+    public function organization(): BelongsTo
+    { return $this->belongsTo(Organization::class); }
 }
