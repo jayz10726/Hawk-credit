@@ -25,6 +25,11 @@ class AuditLog extends Model
     public function auditable(): MorphTo
     { return $this->morphTo(); }
 
+   public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
+
     // Prevent any updates to audit records
     protected static function booted(): void
     {
