@@ -1,10 +1,10 @@
 @extends('layouts.app')
 @section('title','My Loans')
 @section('content')
-<h1 class="text-xl font-bold text-gray-800 mb-6">My Loans</h1>
-<div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-x-auto">
+<h1 class="text-xl font-bold text-gray-300 mb-6">My Loans</h1>
+<div class="bg-gray-800 rounded-xl border border-gray-600    shadow-sm overflow-x-auto">
     <table class="w-full text-sm">
-        <thead class="bg-gray-50 text-xs text-gray-500 uppercase">
+        <thead class="bg-gray-800 text-xs text-gray-300 uppercase">
   <tr>
                 <th class="text-left px-5 py-3">Reference</th>
                 <th class="text-right px-5 py-3">Principal</th>
